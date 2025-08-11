@@ -21,7 +21,12 @@ const Hero: React.FC = () => (
       <div className="hero-visual">
         <div className="book-container">
           <div className="book-cover">
-            <img src={bookImage} alt="From Grit to Glory Book Cover" className="book-image" />
+            <img 
+              src={bookImage} 
+              alt="Escape the Rut Book Cover" 
+              className="book-image" 
+              loading="eager"
+            />
           </div>
           <div className="book-shadow"></div>
         </div>
@@ -30,7 +35,6 @@ const Hero: React.FC = () => (
             <h4>Kimone 'Kimmy' Mcloud</h4>
             <p>Certified Christian Life Coach & Youth Empowerment Specialist</p>
             <p>Born in Shaolin, a rural community in Jamaica, Kimone has dedicated her life to inspiring the next generation through authentic leadership and spiritual guidance.</p>
-            <p>As a generational curse breaker and agent of change, she uses her love for writing, reading, and public speaking to share heartfelt stories that engage and uplift audiences.</p>
           </div>
         </div>
       </div>

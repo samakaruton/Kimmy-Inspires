@@ -5,6 +5,7 @@ import About from './components/About';
 import Books from './components/Books';
 import Events from './components/Events';
 import Testimonials from './components/Testimonials';
+import Videos from './components/Videos';
 import Footer from './components/Footer';
 import FloatingAssets from './components/FloatingAssets';
 import AOS from 'aos';
@@ -14,8 +15,11 @@ import './index.css';
 const App: React.FC = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 800,
       once: true,
+      offset: 100,
+      delay: 0,
+      easing: 'ease-out-cubic',
     });
   }, []);
 
@@ -33,6 +37,7 @@ const App: React.FC = () => {
           <Books />
         </div>
         <Events />
+        <Videos />
         <Testimonials />
       </main>
       <Footer />

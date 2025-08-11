@@ -27,7 +27,12 @@ const FloatingAssets: React.FC = () => {
           style={{ animationDelay: `${asset.delay}s` }}
         >
           <div className="bubble-content">
-            <img src={asset.src} alt={asset.alt} className="bubble-image" />
+                                 <img 
+                       src={asset.src} 
+                       alt={asset.alt} 
+                       className="bubble-image" 
+                       loading="lazy"
+                     />
             <div className="bubble-overlay"></div>
           </div>
         </div>
